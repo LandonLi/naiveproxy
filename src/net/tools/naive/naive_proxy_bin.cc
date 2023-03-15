@@ -128,7 +128,7 @@ std::unique_ptr<base::Value> GetConstants() {
 
 void GetCommandLine(const base::CommandLine& proc, CommandLine* cmdline) {
   if (proc.HasSwitch("h") || proc.HasSwitch("help")) {
-    std::cout << "Usage: naive { OPTIONS | config.json }\n"
+    std::cout << "Usage: young { OPTIONS | config.json }\n"
                  "\n"
                  "Options:\n"
                  "-h, --help                 Show this message\n"
@@ -150,7 +150,7 @@ void GetCommandLine(const base::CommandLine& proc, CommandLine* cmdline) {
   }
 
   if (proc.HasSwitch("version")) {
-    std::cout << "naive " << version_info::GetVersionNumber() << std::endl;
+    std::cout << "young " << version_info::GetVersionNumber() << std::endl;
     exit(EXIT_SUCCESS);
   }
 
