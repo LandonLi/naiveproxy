@@ -343,7 +343,7 @@ int main(int argc, char* argv[]) {
   }
 
   if (config_dict.contains("h") || config_dict.contains("help")) {
-    std::cout << "Usage: naive { OPTIONS | config.json }\n"
+    std::cout << "Usage: young { OPTIONS | config.json }\n"
                  "\n"
                  "Options:\n"
                  "-h, --help                 Show this message\n"
@@ -366,7 +366,7 @@ int main(int argc, char* argv[]) {
   }
 
   if (config_dict.contains("version")) {
-    std::cout << "naive " << version_info::GetVersionNumber() << std::endl;
+    std::cout << "young " << version_info::GetVersionNumber() << std::endl;
     exit(EXIT_SUCCESS);
   }
 
